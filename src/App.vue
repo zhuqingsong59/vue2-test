@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <render-component>
+      <template v-slot:sss>
+        <div >
+          测试插槽
+        </div>
+      </template>
+    </render-component>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import renderComponent from './components/renderComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    renderComponent
   }
 }
 </script>
 
 <style>
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
