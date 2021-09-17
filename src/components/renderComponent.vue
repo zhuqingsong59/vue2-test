@@ -8,7 +8,7 @@ export default {
   components: {
     Button
   },
-  render (h, ) {
+  render (h) {
     return h(
       'Button',
       {
