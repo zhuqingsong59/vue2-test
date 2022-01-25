@@ -1,12 +1,8 @@
 <script>
-import Button from 'ant-design-vue/lib/button'
 export default {
   name: 'renderComponent',
   props: {
     msg: String
-  },
-  components: {
-    Button
   },
   render (h) {
     return h(

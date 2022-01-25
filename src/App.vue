@@ -1,17 +1,28 @@
 <template>
   <div id="app">
+    <listeners aa="aa" bb="bb" :ceshi="ceshi"  @divClick="btnClick" @test="tt">
+    </listeners>
     <render-component>
     </render-component>
   </div>
 </template>
 
 <script>
-import renderComponent from './components/renderComponent.vue'
 
 export default {
   name: 'App',
-  components: {
-    renderComponent
+  data () {
+    return {
+      ceshi: 'ceshi'
+    }
+  },
+  methods: {
+    btnClick () {
+      alert('点击')
+    },
+    tt () {
+      console.log('tt')
+    }
   }
 }
 </script>
