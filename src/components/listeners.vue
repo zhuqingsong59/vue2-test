@@ -23,7 +23,6 @@ export default {
   },
   methods: {
     clickTest () {
-      console.log(22)
       this.$emit('divClick')
     }
   }
