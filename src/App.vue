@@ -4,6 +4,7 @@
     </listeners>
     <render-component>
     </render-component>
+    <model-input v-model="ceshi"></model-input>
   </div>
 </template>
 
@@ -14,6 +15,11 @@ export default {
   data () {
     return {
       ceshi: 'ceshi'
+    }
+  },
+  watch: {
+    ceshi (newVal) {
+      console.log(newVal)
     }
   },
   methods: {
