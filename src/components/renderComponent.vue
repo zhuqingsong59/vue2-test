@@ -15,7 +15,7 @@ export default {
           }
         }
       },
-      '我是组件按钮'
+      '我是render函数组件'
     )
   }
 }

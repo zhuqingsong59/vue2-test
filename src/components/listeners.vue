@@ -1,6 +1,6 @@
 <template>
   <div class="" @click="clickTest">
-    我是一个子组件
+    listeners属性
   </div>
 </template>
 

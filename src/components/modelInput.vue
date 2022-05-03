@@ -1,5 +1,5 @@
 <template lang="html">
-  <button type="button" name="button" @click="set">我是一个按钮</button>
+  <button type="button" name="button" @click="set">emit一个input事件</button>
 </template>
 
 <script>
